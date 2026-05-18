@@ -25,10 +25,10 @@
   </header>
 
   <!-- Main -->
-  <main class="max-w-7xl mx-auto px-6 py-12">
+  <main class="max-w-7xl mx-auto px-6 py-6">
 
     <!-- Search box -->
-    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6 max-w-2xl">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6 max-w-2xl mx-auto">
       <h2 class="text-lg font-medium text-gray-700 mb-1">Enter Container Number</h2>
       <p class="text-sm text-gray-400 mb-5">The app will calculate the suggested appointment date based on SLA logic.</p>
       <form onsubmit="handleSearch(event)" class="flex gap-3">
@@ -110,7 +110,7 @@
         <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden fade-in">
 
           <!-- Suggestion hero -->
-          <div class="px-8 py-7 border-b border-gray-100">
+          <div class="px-6 py-5 border-b border-gray-100">
             <p class="text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">${suggestionLabel}</p>
             <p class="text-3xl font-bold ${urgencyClass} mb-1">${escHtml(suggestionValue)}</p>
             <p class="text-sm text-gray-400">
@@ -120,7 +120,7 @@
           </div>
 
           <!-- QID table -->
-          <div class="px-8 py-5">
+          <div class="px-4 py-4">
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">
               QID Breakdown (${data.qids.length} shipment${data.qids.length !== 1 ? 's' : ''})
             </p>
